@@ -1,0 +1,5 @@
+function SteppedLFO(s)
+  local steps = ceil(s * 32)
+  local stepSize = (1 / (steps - 1))
+  return  stepSize * (LINES % steps)
+end
